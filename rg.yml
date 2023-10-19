@@ -4,7 +4,7 @@
   hosts: "{{ target_host }}"
   connection: local
   vars:
-    resource_group: AWXTEST
+    resource_group: win
     vm_name: testvm
     location: eastus
   tasks:
