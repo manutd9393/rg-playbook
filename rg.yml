@@ -1,10 +1,10 @@
 ---
 
 - name: Create Azure VM
-  hosts: "{{ target_host }}"
+  hosts: all
   connection: local
   vars:
-    resource_group: win
+    resource_group: AWXTEST
     vm_name: testvm
     location: eastus
   tasks:
@@ -12,3 +12,4 @@
     azure_rm_resourcegroup:
       name: "{{ resource_group }}"
       location: "{{ location }}"
+
