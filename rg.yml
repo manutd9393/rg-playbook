@@ -1,7 +1,7 @@
 ---
 
 - name: Create Azure VM
-  hosts: "{{ target_hostname }}"
+  hosts: "{{ target_host }}"
   connection: local
   vars:
     resource_group: AWXTEST
